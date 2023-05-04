@@ -1,5 +1,4 @@
-# add-ppa-debian
-add-ppa-debian for debian 11/12
+#add-ppa-debian for debian 11/12
 
 Usage : make the script executable and run it with sudo passing ppa as argument.
 
