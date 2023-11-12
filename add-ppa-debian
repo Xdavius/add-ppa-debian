@@ -33,7 +33,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Script need curl
-if test -x "$(command -v curl 2>/dev/null)"; then
+if [[ ! -f /usr/bin/curl ]]; then
   apt install curl
 fi
 
