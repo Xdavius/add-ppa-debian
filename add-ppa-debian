@@ -93,11 +93,20 @@ then
 
 		elif [ "$(lsb_release -cs)" == "testing" ];
 		then
-    		codename=kinetic
+    		codename=jammy
+
+		elif [ "$(lsb_release -cs)" == "trixie" ];
+		then
+    		codename=jammy
 
 		elif [ "$(lsb_release -cs)" == "sid" ];
 		then
-		codename=lunar
+		codename=jammy
+
+		#Add support for LMDE6
+		elif [ "$(lsb_release -cs)" == "faye" ];
+		then
+    		codename=jammy
 
 		else 
     		echo "Unsupported Debian version \(>= Wheezy only\)"
