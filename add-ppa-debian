@@ -85,7 +85,7 @@ then
 
 		elif [ "$(lsb_release -cs)" == "bookworm" ];
 		then
-    		codename=kinetic
+    		codename=jammy
 
 		elif [ "$(lsb_release -cs)" == "stable" ];
 		then
@@ -93,15 +93,15 @@ then
 
 		elif [ "$(lsb_release -cs)" == "testing" ];
 		then
-    		codename=jammy
+    		codename=noble
 
 		elif [ "$(lsb_release -cs)" == "trixie" ];
 		then
-    		codename=jammy
+    		codename=noble
 
 		elif [ "$(lsb_release -cs)" == "sid" ];
 		then
-		codename=jammy
+		codename=noble
 
 		#Add support for LMDE6
 		elif [ "$(lsb_release -cs)" == "faye" ];
